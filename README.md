@@ -28,7 +28,7 @@ Incorporating a customized object into image generation presents an attractive f
 ## 💫 Inference
 
 ### Run local gradio demo
-- Download the weights of Customnet [customnet_v1.pth]() and put it to `./pretrain`.
+- Download the weights of Customnet [customnet_v1.pth](https://huggingface.co/jiangyzy/CustomNet/tree/main) and put it to `./pretrain`.
 
 - Running scripts:
 
