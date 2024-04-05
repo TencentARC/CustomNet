@@ -16,6 +16,41 @@ Incorporating a customized object into image generation presents an attractive f
 <img src="assets/pipeline.png" width="600px"/>  
 </div>
 
+---
+
+## ⚙️ Environment
+    conda create -n customnet python=3.10 -y
+    conda activate customnet
+    pip install -r requirements.txt
+    python -m pip install -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+    python -m pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
+
+## 💫 Inference
+
+### Run local gradio demo
+- Download the weights of Customnet [customnet_v1.pth]() and put it to `./pretrain`.
+
+- Running scripts:
+
+        sh scripts/run_app.sh
+
+## 🔥Train
+### Prepare dataset
+- We provide example data in `examples/data` containg images only.
+- Clone extra repo in [extralibs](extralibs), and prepare environments.
+
+        cd extralibs
+        git clone https://github.com/CASIA-IVA-Lab/FastSAM.git
+        git clone https://github.com/salesforce/LAVIS.git
+        git clone https://github.com/cvlab-columbia/zero123.git
+- Use the script to create datasets:
+        
+        sh scripts/process_data.sh
+### Train
+- Check out [config file](configs/config_customnet.yaml), and update related paths.
+- Use the script to train:
+        
+        sh scripts/process_data.sh
 
 ## BibTeX
 ```
