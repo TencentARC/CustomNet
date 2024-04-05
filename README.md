@@ -1,7 +1,7 @@
 # CustomNet
 
 
-Official implementation of CustomNet: Zero-shot Object Customization with Variable-Viewpoints in Text-to-Image Diffusion Models.
+Official implementation of CustomNet: Object Customization with Variable-Viewpoints in Text-to-Image Diffusion Models.
 
 <div align="center">
 <img src="assets/teaser.png" width="600px"/>  
@@ -9,23 +9,7 @@ Official implementation of CustomNet: Zero-shot Object Customization with Variab
 
 
 ## Introduce
-Incorporating a customized object into image generation presents an attractive
-feature in text-to-image generation. However, existing optimization-based and
-encoder-based methods are hindered by drawbacks such as time-consuming optimization,
-insufficient identity preservation, and a prevalent copy-pasting effect. To
-overcome these limitations, we introduce CustomNet, a novel object customization
-approach that explicitly incorporates 3D novel view synthesis capabilities
-into the object customization process. This integration facilitates the adjustment
-of spatial position relationships and viewpoints, yielding diverse outputs while effectively
-preserving object identity. Moreover, we introduce delicate designs to
-enable location control and flexible background control through textual descriptions
-or specific user-defined images, overcoming the limitations of existing 3D
-novel view synthesis methods. We further leverage a dataset construction pipeline
-that can better handle real-world objects and complex backgrounds. Equipped
-with these designs, our method facilitates zero-shot object customization without
-test-time optimization, offering simultaneous control over the viewpoints, location,
-and background. As a result, our CustomNet ensures enhanced identity
-preservation and generates diverse, harmonious outputs.
+Incorporating a customized object into image generation presents an attractive feature in text-to-image (T2I) generation. Some methods finetune T2I models for each object individually at test-time, which tend to be overfitted and time-consuming. Others train an extra encoder to extract object visual information for customization efficiently but struggle to preserve the object’s identity. To address these limitations, we present CustomNet, a unified encoder-based object customization framework that explicitly incorporates 3D novel view synthesis capabilities into the customization process. This integration facilitates the adjustment of spatial positions and viewpoints, producing diverse outputs while effectively preserving the object’s identity. To train our model effectively, we propose a dataset construction pipeline to better handle real-world objects and complex backgrounds. Additionally, we introduce delicate designs that enable location control and flexible background control through textual descriptions or user-defined backgrounds. Our method allows for object customization without the need of test-time optimization, providing simultaneous control over viewpoints, location, and text. Experimental results show that our method outperforms other customization methods regarding identity preservation, diversity, and harmony.
 
 
 <div align="center">
