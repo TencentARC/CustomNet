@@ -26,5 +26,6 @@ lovely-tensors>=0.1.14
 plotly==5.13.1
 Pillow==9.5.0
 gradio==3.37.0
-basicsr
 ultralytics==8.0.120
+-e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+-e git+https://github.com/openai/CLIP.git@main#egg=clip
