@@ -228,8 +228,8 @@ def main(args):
                     location_image = gr.Image(type="pil", interactive=True, elem_id="location", elem_classes='image', visible=True)
                 gr.Markdown("### 2: Object Viewpoint", show_label=False, visible=True)
                 with gr.Row():    
-                    polar = gr.Slider(minimum=-90, maximum=90, step=-0.5, label="Polar Angle", value=0.0, visible=True)
-                    azimuth = gr.Slider(minimum=-60, maximum=90, step=-0.5, label="Azimuth angle", value=0.0, visible=True)
+                    polar = gr.Slider(minimum=-30, maximum=30, step=-0.5, label="Polar Angle", value=0.0, visible=True)
+                    azimuth = gr.Slider(minimum=-60, maximum=60, step=-0.5, label="Azimuth angle", value=0.0, visible=True)
                 gr.Markdown("### 3: Text", show_label=False, visible=True)
                 prompt = gr.Textbox(value="on the seaside", label="Prompt", interactive=True, visible=True)
 
