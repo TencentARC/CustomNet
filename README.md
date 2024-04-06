@@ -1,6 +1,11 @@
-# CustomNet
+# CustomNet: Object Customization with Variable-Viewpoints in Text-to-Image Diffusion Models.
 
 
+🤗 [![HF Demo](https://img.shields.io/static/v1?label=Demo&message=MotionCtrl%2BSVD&color=orange)](https://huggingface.co/spaces/TencentARC/CustomNet) &ensp; 
+[![arXiv](https://img.shields.io/badge/arXiv-red)](https://arxiv.org/abs/2310.19784) &ensp;
+[![Project Page](https://img.shields.io/badge/Project%20Page-green)](https://jiangyzy.github.io/CustomNet/)
+
+---
 Official implementation of CustomNet: Object Customization with Variable-Viewpoints in Text-to-Image Diffusion Models.
 
 <div align="center">
@@ -26,7 +31,7 @@ Incorporating a customized object into image generation presents an attractive f
 ## 💫 Inference
 
 ### Run local gradio demo
-- Download the weights of Customnet [customnet_v1.pth](https://huggingface.co/jiangyzy/CustomNet/tree/main) and put it to `./pretrain`.
+- Download the weights of Customnet [customnet_v1.pth](https://huggingface.co/TencentARC/CustomNet/tree/main) and put it to `./pretrain`.
 
 - Running scripts:
 
