@@ -22,8 +22,6 @@ Incorporating a customized object into image generation presents an attractive f
     conda create -n customnet python=3.10 -y
     conda activate customnet
     pip install -r requirements.txt
-    python -m pip install -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
-    python -m pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
 
 ## 💫 Inference
 
