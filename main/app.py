@@ -15,9 +15,8 @@ import sys
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 import copy 
 from utils.gradio_utils import load_preprocess_model, preprocess_image
-from ldm.util import instantiate_from_config
+from ldm.util import instantiate_from_config, img2tensor
 from customnet.ddim import DDIMSampler
-from basicsr.utils import img2tensor
 from einops import rearrange
 import math
 
