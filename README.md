@@ -6,7 +6,7 @@
 [![Project Page](https://img.shields.io/badge/Project%20Page-green)](https://jiangyzy.github.io/CustomNet/)
 
 ---
-Official implementation of CustomNet: Object Customization with Variable-Viewpoints in Text-to-Image Diffusion Models.
+Official implementation of CustomNet: Object Customization with Variable-Viewpoints in Text-to-Image Diffusion Models. ( ACM MM 2024）
 
 <div align="center">
 <img src="assets/teaser.png" width="600px"/>  
