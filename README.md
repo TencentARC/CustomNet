@@ -53,7 +53,7 @@ Incorporating a customized object into image generation presents an attractive f
 - Check out [config file](configs/config_customnet.yaml), and update related paths.
 - Use the script to train:
         
-        sh scripts/process_data.sh
+        sh scripts/train.sh
 
 ## BibTeX
 ```
